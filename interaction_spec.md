@@ -1,0 +1,16 @@
+# Interaction Specification
+- Hero: subtle T-shirt motion; CTA scrolls forward; reduced-motion fallback.
+- Reason selector: four selectable cards; save choice.
+- Scale reveal: animate 7.073M once; clickable 58/42 segments reveal definition + quantity.
+- Disposal selector: four clickable cards; save choice; never imply guaranteed final outcome.
+- Collection: interactive Sankey Home → ULB / NGO+Informal → Sorting → Outcomes; click/focus shows source and number.
+- Sorting activity: fictional labelled garments; user chooses Reuse / Recycle / Downcycle / Discard; explain real-world uncertainty.
+- Panipat: clickable/tappable map marker opens process inset.
+- Outcome cards: expand examples on click.
+- 55/45: 100-garment pictogram; toggle Percent / Approx. tonnes. 55 = 2.255M; 45 = 1.845M.
+- Comparison: accessible two-column or toggle; do not hide essential data behind drag-only UI.
+- Survey: render real values only; show sample size.
+- Qualitative wall: filter All / Donation / Uncertainty / Attachment / Convenience; real anonymous quotes only.
+- Recap: interpolate saved `reason` and `disposalChoice`; do not claim exact destination.
+- Sources: every chart has a clickable source tag.
+- Accessibility: keyboard, focus states, tap alternatives, labels, no colour-only encoding, reduced motion.

@@ -1,0 +1,199 @@
+{
+  "project": {
+    "name": "The Afterlife of Clothes",
+    "slug": "afterlife-of-clothes",
+    "type": "interactive-data-storytelling-web-experience",
+    "audience": "Urban Indian young adults, approximately 18–30",
+    "keyMessage": "Discarding a garment ends your relationship with it — not necessarily its life.",
+    "narrativeModel": [
+      "Personal",
+      "Systemic",
+      "National",
+      "Personal"
+    ]
+  },
+  "experience": {
+    "sections": [
+      {
+        "id": "hero",
+        "title": "The Afterlife of Clothes",
+        "interaction": "scroll_cta"
+      },
+      {
+        "id": "reason",
+        "title": "Why did you stop wearing it?",
+        "interaction": "clickable_choice",
+        "stateKey": "reason"
+      },
+      {
+        "id": "india-scale",
+        "title": "Your T-shirt is one of millions",
+        "interaction": "animated_data_reveal"
+      },
+      {
+        "id": "disposal",
+        "title": "What would you do with it?",
+        "interaction": "clickable_choice",
+        "stateKey": "disposalChoice"
+      },
+      {
+        "id": "collection",
+        "title": "Your T-shirt leaves home",
+        "interaction": "interactive_sankey"
+      },
+      {
+        "id": "sorting",
+        "title": "Clothes don't sort themselves",
+        "interaction": "sorting_activity"
+      },
+      {
+        "id": "panipat",
+        "title": "From old textile to new material",
+        "interaction": "interactive_map_process"
+      },
+      {
+        "id": "definitions",
+        "title": "A second life can mean different things",
+        "interaction": "expandable_cards"
+      },
+      {
+        "id": "outcomes",
+        "title": "Where does post-consumer textile waste end up?",
+        "interaction": "pictogram_toggle"
+      },
+      {
+        "id": "comparison",
+        "title": "Something changes after we buy it",
+        "interaction": "pre_post_comparison"
+      },
+      {
+        "id": "survey",
+        "title": "What do young consumers think happens next?",
+        "interaction": "interactive_charts",
+        "status": "TBD until real survey data is supplied"
+      },
+      {
+        "id": "voices",
+        "title": "What people told us",
+        "interaction": "filterable_quote_wall",
+        "status": "TBD until real survey responses are supplied"
+      },
+      {
+        "id": "recap",
+        "title": "Remember your T-shirt?",
+        "interaction": "personalised_recap"
+      },
+      {
+        "id": "reflection",
+        "title": "You were done with it. But its story continued.",
+        "interaction": "reflection"
+      }
+    ]
+  },
+  "journeyState": {
+    "reason": null,
+    "disposalChoice": null
+  },
+  "verifiedData": {
+    "indiaTextileWasteKTPA": 7073,
+    "indiaTextileWasteMillionTonnes": 7.073,
+    "preConsumer": {
+      "ktpa": 2973,
+      "percent": 42
+    },
+    "postConsumer": {
+      "ktpa": 4100,
+      "percent": 58
+    },
+    "postConsumerOutcomes": {
+      "reuseRecyclingDowncycling": {
+        "ktpa": 2255,
+        "percent": 55
+      },
+      "incinerationLandfill": {
+        "ktpa": 1845,
+        "percent": 45
+      }
+    },
+    "postConsumerCollection": {
+      "urbanLocalBodies": {
+        "ktpa": 2725,
+        "percent": 66
+      },
+      "ngoInformalCollectors": {
+        "ktpa": 1375,
+        "percent": 34
+      }
+    },
+    "preConsumerMappedPathwaysPercent": {
+      "upcycling": 58,
+      "downcycling": 39,
+      "reuseRepurpose": 1,
+      "incinerationLandfill": 2
+    }
+  },
+  "survey": {
+    "status": "TBD",
+    "rule": "Never fabricate survey values or quotes. Render a pending state until real cleaned survey data is supplied."
+  },
+  "visualSystem": {
+    "colors": {
+      "background": "#F2EFE8",
+      "text": "#191919",
+      "mutedText": "#6F6C66",
+      "border": "#D4D0C7",
+      "reuse": "#65785F",
+      "recycle": "#637A83",
+      "downcycle": "#9A7A52",
+      "disposal": "#A64B32"
+    },
+    "displayFont": "Instrument Serif",
+    "bodyFont": "Inter",
+    "style": "fashion editorial + garment care labels + tactile textile cues + rigorous data visualisation"
+  },
+  "dataFiles": {
+    "nationalTextileFlow": "data/national_textile_flow.csv",
+    "surveyTemplate": "data/survey_template.csv",
+    "consumerReviewsSchema": "data/consumer_reviews_schema.csv",
+    "clothingFitSchema": "data/clothing_fit_schema.csv",
+    "garmentCompositionSchema": "data/garment_composition_schema.csv"
+  },
+  "sources": [
+    {
+      "name": "Ministry of Textiles, Government of India",
+      "year": 2026,
+      "title": "Mapping of Textile Waste Value Chain in India",
+      "url": "https://www.texmin.gov.in/static/uploads/2026/03/407c2f186a2044a4497c9c9803d16a2c.pdf",
+      "role": "core national textile-waste data"
+    },
+    {
+      "name": "United Nations Environment Programme",
+      "title": "Sustainable fashion / International Day of Zero Waste material",
+      "url": "https://www.unep.org/ietc/news/statement/press-release-unsustainable-fashion-and-textiles-focus-international-day-zero-waste",
+      "role": "global context"
+    },
+    {
+      "name": "Fashion for Good",
+      "year": 2022,
+      "title": "Wealth in Waste: India's Potential to Bring Textile Waste Back into the Supply Chain",
+      "url": "https://www.fashionforgood.com/report/wealth-in-waste/",
+      "role": "supporting India research"
+    },
+    {
+      "name": "Foundation for MSME Clusters",
+      "year": 2026,
+      "title": "Panipat Textile Recycling — Sustainability Readiness Report",
+      "url": "https://fmc.org.in/panipat-textile-recycling-sustainability-readiness-report/",
+      "role": "Panipat case-study context"
+    }
+  ],
+  "buildRules": [
+    "Narrative first, dashboard second.",
+    "Never invent missing data.",
+    "Keep source attribution visible.",
+    "All clickable interactions must work with keyboard and touch.",
+    "Mobile must not depend on hover.",
+    "Respect prefers-reduced-motion.",
+    "User choices may influence the recap but must not be presented as deterministic real-world outcomes."
+  ]
+}
