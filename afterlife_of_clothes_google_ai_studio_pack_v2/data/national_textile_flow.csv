@@ -1,0 +1,8 @@
+metric_id,stage,category,quantity_ktpa,percentage,geography,year,source_id,website_section
+total_textile_waste,total,All textile waste,7073,,India,2026,mot_2026,scale
+pre_consumer,source,Pre-consumer,2973,42,India,2026,mot_2026,scale
+post_consumer,source,Post-consumer,4100,58,India,2026,mot_2026,scale
+post_recovery,outcome,Reuse/recycling/downcycling,2255,55,India,2026,mot_2026,outcome
+post_disposal,outcome,Incineration/landfill,1845,45,India,2026,mot_2026,outcome
+post_ulb,collection,Urban Local Bodies,2725,66,India,2026,mot_2026,collection
+post_ngo_informal,collection,NGOs/informal collectors,1375,34,India,2026,mot_2026,collection
