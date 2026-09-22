@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-fabric: #F2EFE8;
+  --color-charcoal: #191919;
+  --color-muted: #6F6C66;
+  --color-stitch: #D4D0C7;
+  --color-reuse: #65785F;
+  --color-recycle: #637A83;
+  --color-downcycle: #9A7A52;
+  --color-disposal: #A64B32;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-fabric);
+    color: var(--color-charcoal);
+  }
+}
+
+/* Care label stitch pattern line */
+.stitch-border {
+  border-style: dashed;
+  border-width: 1.5px;
+  border-color: #D4D0C7;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F2EFE8;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D0C7;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6F6C66;
+}
